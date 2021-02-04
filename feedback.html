@@ -1,0 +1,168 @@
+<html>
+<head>
+  <title>City Care</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="icon" type="image/ico" href="logo2.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+                    <!-- We're going to place the form here in the next step -->
+                    <form></form> 
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+     $(document).ready(function(){
+         ("button").click(function(){
+             ("#p1").hide();
+         });
+     });
+    </script>
+    </body>
+     <div style="background-image: url('bg.jpg');background-size: 100% 100%;">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="citycare.png" class="img" style="width:275px;height:130px;margin-left:10px">
+            </div> 
+          <div class="col-md-6">
+              
+            </div>
+        </div>
+    </div>
+    <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary"><a href="index.html" class="a2">Stress</a></button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary"><a href="index.html" class="a2">Relieve Stress</a></button>
+    </div>
+        <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Stories <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="blogs_final.html">Anonymously</a></li>
+        <li><a href="blogs_final.html">Club</a></li>
+      </ul>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="campaigns.html" class="a2">Campaigns</a></button>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="index.html" class="a2">Music</a></button>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="index.html" class="a2">Psychologists Near Me</a></button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Donate <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="Donation.html">To NGO</a></li>
+        <li><a href="Donation.html">To Mental Asylum</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="feedback.html" class="a2">Feedback</a></button>
+    </div>
+  </div>
+     <div>
+        <h1 align="center" style="background-color:#FFE4C4">WRITE TO US:</h1>
+    </div>
+    <!--</html>-->
+
+
+<form id="contact-form" method="post" action="contact.php" role="form">
+     <div class="jumbotron">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+        
+  <div class="row">
+     
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chandigarh, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 8572042465</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> citycare@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Please specify your need *</label>
+                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                        <option value=""></option>
+                        <option value="Request quotation">Request quotation</option>
+                        <option value="Request order status">Request order status</option>
+                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-primary btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> These fields are required.
+                    <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">City health Care</a>.</p>
+            </div>
+        </div>
+        </div></div></div></div></div>
+</form>
+</html>

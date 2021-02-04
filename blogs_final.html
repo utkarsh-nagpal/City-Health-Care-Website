@@ -1,0 +1,246 @@
+<html>
+    <head>
+  <title>City Care</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="icon" type="image/ico" href="logo2.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+     $(document).ready(function(){
+         ("button").click(function(){
+             ("#p1").hide();
+         });
+     });
+    </script>
+</head>
+<body>
+    <div style="background-image: url('bg.jpg');background-size: 100% 100%;">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="citycare.png" class="img" style="width:275px;height:130px;margin-left:10px">
+            </div> 
+          <div class="col-md-6">
+              
+            </div>
+        </div>
+    </div>
+     <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" >Stress</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary"><a href="index.html" class="a2">Relieve Stress</a></button>
+    </div>
+        <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Stories <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Anonymously</a></li>
+        <li><a href="#">Club</a></li>
+      </ul>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="campaigns.html" class="a2">Campaigns</a></button>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="music.html" class="a2">Music</a></button>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="psychologist.html" class="a2">Psychologists Near Me</a></button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Donate <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="Donation.html">To NGO</a></li>
+        <li><a href="Donation.html">To Mental Asylum</a></li>
+      </ul>
+    </div>
+         <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="feedback.html" class="a2">Feedback</a></button>
+    </div>
+  </div>
+    <h1 align="center"><i>Stories and reviews....</sub></i></h1><br>
+    <!--angular js-->
+    <div class="container">
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <i>Type Here :</i> <input ng-model="story"><br><br>
+       <img src="story1.jpg" style="width:110px"> {{story}} <br><hr><br>
+    </div>
+
+    <script>
+     var app = angular.module('myApp', []);
+     app.controller('myCtrl', function($scope) {
+    $scope.name = "Anamika Agarwal";
+    });
+    </script>
+    </div>
+    <!--Mediaaa-->
+    <div class="container">
+    <div class="media">
+    <div class="media-left">
+        <img src="pic1.jpg" class="media-object" style="width:110px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Anamika Agarwal <small><i> Posted on May 19, 2019</i></small></h4>
+      <p>excellent service..very positive environment.</p>
+      
+      <!-- Nested media object -->
+      <div class="media">
+        <div class="media-left">
+          <img src="pic2.jpg" class="media-object" style="width:90px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Pradhan Masum<small><i> Posted on May 21, 2019</i></small></h4>
+          <p>Just have to say the whole experience was one of the most professional I have ever encountered. From the reception welcome to discharge, no staff could do enough for you. Nurses, doctors,..everyone, in fact it was like being pampered in a health club Honestly I think you could not fault anything at all. 100% recommended "</p>
+
+          <!-- Nested media object -->
+          <div class="media">
+            <div class="media-left">
+              <img src="pic3.jpg" class="media-object" style="width:90px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Murchana Sarma<small><i> Posted on May 22, 2019</i></small></h4>
+              <p>One of the reputed multi super speciality hospital in entire north east..... with an excellent staff and great team of doctors.....</p>
+            </div>
+          </div>
+          
+        </div>
+        </div></div><br><br>
+        <div class="media">
+    <div class="media-left">
+      <img src="pic4.JPG" class="media-object" style="width:110px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Himalika Mahanta<small><i> Posted on March 5, 2020</i></small></h4>
+      <p>Because this hospital has really given life to my mother. I can't forget the dedication of the medical team beside this the convenience they have offered me</p>
+      
+      <!-- Nested media object -->
+      <div class="media">
+        <div class="media-left">
+          <img src="pic5.jpg" class="media-object" style="width:90px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Rumi Barman <small><i> Posted on April 18, 2020</i></small></h4>
+          <p>Doctors are good, but to consult with them you need enough time with you.
+			lack of communication and coordination of employees</p>
+
+          <!-- Nested media object -->
+          <div class="media">
+            <div class="media-left">
+              <img src="pic6.jpg" class="media-object" style="width:90px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Yash Sharma<small><i> Posted on April 20, 2020</i></small></h4>
+              <p>Yes,facing same issue</p>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Nested media object -->
+        <div class="media">
+          <div class="media-left">
+            <img src="pic7.jpg" class="media-object" style="width:110px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Dhrubajyoti Das <small><i> Posted on July 3, 2020</i></small></h4>
+            <p>EXCELLENT SERVICE, GOOD CARE WITH PATIENT, VERY CLEAN HOSPITAL.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Nested media object -->    
+    <div class="media">
+      <div class="media-left">
+        <img src="pic8.jpg" class="media-object" style="width:90px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Firoj Chowdhury <small><i>Posted on July 25, 2020</i></small></h4>
+        <p>Proudly I can say that this hospital brings lots of happiness for guwahatians, every member of this hospital is awesome.top level hygiene, discipline and every facility is available here.for Cancer patient this is the best hospital in guwahati ,In shaa ALLAH we should make Dua for success of this hospital</p>
+      </div>
+    </div>
+
+  </div>
+</div><br><br>
+ <div class="media">
+    <div class="media-left">
+      <img src="pic9.JPG" class="media-object" style="width:90px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Dimbeswar Das <small><i> Posted on September 4, 2020</i></small></h4>
+      <p>Professional services well balanced..👍</p>
+      
+      <!-- Nested media object -->
+      <div class="media">
+        <div class="media-left">
+          <img src="pic10.jpg" class="media-object" style="width:90px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Rakesh Singh<small><i> Posted on Septmeber 19, 2020</i></small></h4>
+          <p>Its a good hospital having advance technology</p>
+
+          <!-- Nested media object -->
+          <div class="media">
+            <div class="media-left">
+              <img src="pic11.jpg" class="media-object" style="width:90px">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Rafik Uddin Ahmed<small><i> Posted on November 21, 2020</i></small></h4>
+              <p>Advance technology and experienced guidance together it is going to be best treatment.
+				 Blessed to have health city near me</p>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Nested media object -->
+        <div class="media">
+          <div class="media-left">
+            <img src="pic12.jpg" class="media-object" style="width:90px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Kamalesh Hajong <small><i> Posted on November 25, 2020</i></small></h4>
+            <p>Thank you health city specially Oncologist Department who gives second life of my elder brother</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Nested media object -->    
+    <div class="media">
+      <div class="media-left">
+        <img src="pic13.JPG" class="media-object" style="width:110px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Pankaj Deka<small><i> Posted on December 19, 2020</i></small></h4>
+        <p>Most advanced infrastructure.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <br><br>
+ <div style="background-color:#555;color:white;">
+    <div class="row">
+      <div class="col-md-6">
+          <a href="feedback.html" class="a2" style="margin-left:20px;">Contact Us</a><br>
+          <a href="about.html" class="a2" style="margin-left:20px;">About Us</a><br>
+      </div>
+      <div class="col-md-6">
+          Facebook  : cityhealthcare<br>
+          Instagram : cityhealthcare
+      </div>
+    </div>
+</div>
+</body>
+</html>

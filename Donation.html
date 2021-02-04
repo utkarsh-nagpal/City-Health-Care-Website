@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="donations.css">
+    
+    
+    
+</head>
+<body style="background-image: url('donation.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">
+    <script>
+  
+		//Set & Highlight Donation Amount
+		$(".button").click(function(){
+			$(".button").removeClass("selected");
+			$(this).addClass("selected");
+			
+			$(this).find("input").focus();
+		});
+		
+		
+    
+    </script>
+<div class="donation-container">
+           
+            <div class="donation-box">
+	            <div class="title" style="background-color: blue">Donation Information</div>
+	            
+	            <div class="fields">
+		            <input type="text" id="firstName" placeholder="First Name">
+		            <input type="text" id="lastName" placeholder="Last Name">
+		            <input type="email" id="email" placeholder="Email">
+	            </div>
+	            
+	            <div class="amount">
+		            <div class="button" id="30">RS.30</div>
+		            <div class="button" id="50">RS.50</div>
+		            <div class="button" id="100">RS.100</div>
+		            <div class="button" >RS.<input type="text" class="set-amount" placeholder="" required> </input></div>
+	            </div>
+	            
+	            <div class="switch">
+					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
+					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
+					<span class="switch-selection"></span>
+			    </div>
+			    
+			    <div class="checkboxes">
+					<input type="checkbox" id="receipt" class="checkbox" />
+					<label for="receipt">Email Me A Receipt</label>
+					<br />
+					<input type="checkbox" id="anon" class="checkbox" />
+					<label for="anon">Give Anonymously</label>
+					<br />
+					<input type="checkbox" id="list" class="checkbox" />
+					<label for="list">Add Me To Email List</label>
+			    </div>
+			    
+			    <div class="confirm">
+				    
+			    </div>
+	            
+	            <div class="donate-button"  style="background-color: hotpink"><i class="fa fa-credit-card"></i> Donate Now</div>
+            </div>
+            
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#30").click(function()
+			{
+				$(".set-amount").val("30");
+			});
+		$("#50").click(function()
+			{
+				$(".set-amount").val("50");
+			});
+		$("#100").click(function()
+			{
+				$(".set-amount").val("100");
+			});
+		$(".donate-button").click(function(){
+			if($(".set-amount").val()=="")
+			{
+				alert("Please enter donation amount");
+			}
+			else
+			{
+				$(".set-amount").val("");
+			alert("Your transaction has been successfull");
+		}
+		});
+	});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+</body>
+</html>

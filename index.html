@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>City Care</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="icon" type="image/ico" href="logo2.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+         ("button").click(function(){
+             ("#p1").hide();
+         });
+     });
+    </script>
+    <style> /* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color:red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: lightyellow;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+      <div style="background-image: url('bg.jpg');background-size: 100% 100%;">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="citycare.png" class="img" style="width:275px;height:130px;margin-left:10px">
+            </div> 
+          <div class="col-md-6">
+              
+            </div>
+        </div>
+    </div>
+    <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" >Stress</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary"><a href="index.html" class="a2">Relieve Stress</a></button>
+    </div>
+        <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Stories <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="blogs_final.html">Anonymously</a></li>
+        <li><a href="blogs_final.html">Club</a></li>
+      </ul>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="campaigns.html" class="a2">Campaigns</a></button>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="music.html" class="a2">Music</a></button>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="psychologist.html" class="a2">Psychologists Near Me</a></button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Donate <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="Donation.html">To NGO</a></li>
+        <li><a href="Donation.html">To Mental Asylum</a></li>
+      </ul>
+    </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"><a href="feedback.html" class="a2">Feedback</a></button>
+    </div>
+  </div>
+    <!--Content-->
+<div id="mentalstress">
+    <div>
+        <h1 align="center" style="background-color:#FFE4C4">Stress</h1>
+    </div>
+    <h3 style="color:black;margin-left:20px"><b><u>Stress :-</u></b></h3><br>
+    <p  id="p1" style="margin-left:20px;font-size:18px">Stress, either physiological, biological, or psychological is an organism's response to a stressor such as an environmental condition.[1] Stress is the body's method of reacting to a condition such as a threat, challenge or physical and psychological barrier. Stimuli that alter an organism's environment are responded to by multiple systems in the body.In humans and most mammals, the autonomic nervous system and hypothalamic-pituitary-adrenal (HPA) axis are the two major systems that respond to stress</p>
+
+    <p style="margin-left:20px;font-size:18px">The sympathoadrenal medullary (SAM) axis may activate the fight-or-flight response through the sympathetic nervous system, which dedicates energy to more relevant bodily systems to acute adaptation to stress, while the parasympathetic nervous system returns the body to homeostasis.</p>
+
+    <p style="margin-left:20px;font-size:18px">Through these mechanisms, stress can alter memory functions, reward, immune function, metabolism and susceptibility to diseases.Disease risk is particularly pertinent to mental illnesses, whereby chronic or severe stress remains a common risk factor for several mental illnesses.[5] One system suggests there are five types of stress labeled "acute time-limited stressors", "brief naturalistic stressors", "stressful event sequences", "chronic stressors", and "distant stressors". An acute time-limited stressor involves a short-term challenge, while a brief natural stressor involves an event that is normal but nevertheless challenging.</p><br><br>
+    </div>
+    <div id="mentalstress">
+    <div class="row">
+     <div class="col-md-3">
+        <img src="stress2.jpg" class="img img-responsive" style="width:400px;height:250px">
+        </div>
+        <div class="col-md-3">
+        <img src="stress4.jpg" class="img img-responsive" style="width:400px;height:250px">
+        </div>
+        <div class="col-md-3">
+        <img src="stress3.jpg" class="img img-responsive" style="width:400px;height:250px">
+        </div>
+        <div class="col-md-3">
+        <img src="stress1.jpg" class="img img-responsive" style="width:350px;height:250px">
+        </div>
+    </div>
+    </div>
+    <div id="mentalstress">
+    <hr><br>
+    <h3 style="color:black;margin-left:20px"><b><u>Statistics :-</u></b></h3><br>
+    <div class="container">
+    <table class="table table-stripped table-bordered table-hover">
+    <thead style="background-color:#555">
+        <tr>
+          <th style="color:white">Causes</th>
+          <th style="color:white">Percentage</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Future</td>
+          <td>63%</td>
+        </tr>
+        <tr>
+          <td>Money</td>
+          <td>62%</td>
+        </tr>
+        <tr>
+          <td>Political Climate</td>
+          <td>57%</td>
+        </tr>
+        <tr>
+          <td>Violence/Crime</td>
+          <td>51%</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
+    <div id="mentalstress">
+    <div class="row">
+      <div class="col-md-6">
+          <table class="table table-stripped table-bordered table-hover">
+            <thead style="background-color:#555">
+              <tr>
+                <th style="color:white">Stress Impact Statistics</th>
+                <th style="color:white">Percentage</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Negative impact on their personal and professional life</td>
+                  <td>57%</td>
+                </tr>
+                <tr>
+                  <td>Stress has caused them to fight with people close to them</td>
+                  <td>54%</td>
+                </tr>
+                <tr>
+                  <td>Reported being alienated from a friend or family member </td>
+                  <td>26%</td>
+                </tr>
+                <tr>
+                  <td>Percent who cited jobs interfering with their family</td>
+                  <td>35%</td>
+                </tr>
+              </tbody>
+          </table>
+      </div>
+        <div class="col-md-6">
+           <table class="table table-stripped table-bordered table-hover">
+            <thead style="background-color:#555">
+              <tr>
+                <th style="color:white">Side Effects</th>
+                <th style="color:white">Percentage</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fatigue</td>
+                  <td>51%</td>
+                </tr>
+                <tr>
+                 <td>Headache</td>
+                 <td>44%</td>
+                </tr>
+                <tr>
+                  <td>Muscle Tension</td>
+                  <td>30%</td>
+                </tr>
+                <tr>
+                  <td>Teeth Grinding</td>
+                  <td>17%</td>
+                </tr>
+             </tbody>
+          </table>
+        </div>
+    </div>
+    <br>  
+</div>
+<div id="mentalstress">
+<div style="margin-left:20px">
+    <h3><u><b>What Helps :-</b></u></h3>
+ <br> 
+  <div class="progress">
+   <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%" >
+       <b>TV</b>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+        <b>Outing</b>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        <b>Music</b>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+        <b>Yoga</b>
+    </div>
+  </div>
+ </div>
+</div>
+<br> 
+<div id="mentalstress">
+    <h3 style="color:black;margin-left:20px"><u><b>Types of stress:-</b></u></h3>
+    <p style="margin-left:20px;font-size:18px"><b>Acute Stress</b> -
+Fight or flight.  The body prepares to defend itself.  It takes about 90 minutes for the metabolism to return to normal when the response is over.</p>
+
+    <p style="margin-left:20px;font-size:18px"><b>Chronic Stress:-</b>
+The cost of daily living: bills, kids, jobs…This is the stress we tend to ignore or push down.  Left uncontrolled this stress affects your health- your body and your immune system.</p>
+
+    <p style="margin-left:20px;font-size:18px"><b>Eustress:-</b>
+Stress in daily life that has positive connotations such as:<br>
+Marriage<br>
+Promotion<br>
+Baby<br>
+Winning Money<br>
+New Friends<br>
+Graduation<br></p>
+    <p style="margin-left:20px;font-size:18px"><b>Distress:-</b>
+Stress in daily life that has negative connotations such as:<br>
+Divorce<br>
+Punishment<br>
+Injury<br>
+Negative feelings<br>
+Financial Problems<br>
+Work Difficulties<br></p>
+<br>
+</div>
+  <br>
+    <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!--<ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>-->
+
+    <!-- Wrapper for slides -->
+    <!--<div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <center><img class="img-responsive" src="Mh2.jpg" alt="Chania" width="460" height="345" ></center>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+          <center> <img class="img-responsive" src="Mh.jpg" alt="Chania" width="460" height="345"  ></center>
+        <div class="carousel-caption">
+          <h3 style="font-family:vodka;font-size: 75px;">YOUR NOW IS NOT YOUR FOREVER</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+          <center><img src="Mh3.jpg" alt="Flower" width="460" height="345"></center>
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      <div class="item">
+          <center><img src="Mh4.jpg" alt="Flower" width="460" height="345"></center>
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>-->
+    <div style="background-color:#555;color:white;">
+    <div class="row">
+      <div class="col-md-6">
+          <a href="feedback.html" class="a2" style="margin-left:20px;">Contact Us</a><br>
+          <a href="about.html" class="a2" style="margin-left:20px;">About Us</a><br>
+      </div>
+      <div class="col-md-6">
+          Facebook  : cityhealthcare<br>
+          Instagram : cityhealthcare
+      </div>
+    </div>
+</div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="chat">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn" style="background-color:hotpink">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()" style="background-color:hotpink">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("chat").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("chat").style.display = "none";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.a1:link
+{
+    color:white;
+    background-color:transparent;
+    text-decoration:none;
+}
+.a1:visited
+{
+    color:aqua;
+    background-color:transparent;
+    text-decoration:none;
+}
+.a1:hover
+{
+    color:aqua;
+    background-color:transparent;
+    text-decoration:underline;
+}
+.a1:active
+{
+    color:azure;
+    background-color:transparent;
+    text-decoration:underline;
+}
+.a2:link
+{
+    color:white;
+    background-color:transparent;
+    text-decoration:none;
+}
+.a2:visited
+{
+    color:white;
+    background-color:transparent;
+    text-decoration:none;
+}
+.a2:hover
+{
+    color:white;
+    background-color:transparent;
+    text-decoration:none;
+}
+.a2:active
+{
+    color:azure;
+    background-color:transparent;
+    text-decoration:underline;
+}
